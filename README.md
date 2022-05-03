@@ -1,1 +1,1 @@
-Contém todas as atividades por mim desenvolvidas durante minha trajetória na Trybe
+Contém todas as minhas atividades desenvolvidas durante minha trajetória na Trybe
