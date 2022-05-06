@@ -1,0 +1,31 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 2;
+}
+
+#Cores {
+  color: yellow;
+  }
+
+.fundo-lista {
+  background-color: blue;
+}
+
+p {
+  font-weight: 600;
+}
+
+#amarelo {
+  background-color: yellow;
+}
+
+#vermelho {
+  background-color: red;
+}
+
+#marrom {
+  background-color:brown
+}
