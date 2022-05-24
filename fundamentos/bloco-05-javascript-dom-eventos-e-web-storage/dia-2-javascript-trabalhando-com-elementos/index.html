@@ -97,12 +97,12 @@
 
       //Exercício 8 - 🚀 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
       // 
-      const elementUl = document.createElement('ul');
+      let elementUl = document.createElement('ul');
       sectionRight.appendChild(elementUl);
-      const numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+      let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
         'Sete', 'Oito', 'Nove', 'Dez']
       for (let num in numbers) {
-        const elementLi = document.createElement('li');
+        let elementLi = document.createElement('li');
         elementLi.innerHTML = numbers[num];
         elementUl.appendChild(elementLi);
       }
