@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Formulário da TrybeTrip</h1>
+  <div id="formulary">  
+    <form action="" method="get">
+      <div>
+        <label for="name">Nome Completo</label>
+        <input type="text" name="name" id="name" minlength="10" maxlength="40" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" minlength="10" maxlength="50" required>
+      </div>
+      <div>
+        <input type="radio" name="destiny" id="destiny-1">
+        <label for="destiny-1">Cidade</label>
+        <input type="radio" name="destiny" id="destiny-2">
+        <label for="destiny-2">Campo</label>
+        <input type="radio" name="destiny" id="destiny-3">
+        <label for="destiny-3">Praia</label>
+        <input type="radio" name="destiny" id="destiny-4">
+        <label for="destiny-4">Montanhas</label>
+      </div>
+      <div>
+        <label for="question">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea name="textQuestion" id="question" cols="50" rows="10" maxlength="500" placeholder="Digite sua resposta aqui"></textarea>
+      </div>
+      <div>
+        <label for="data">Melhor data para sua viagem:</label>
+        <input type="date" name="data" id="data">
+      </div>
+      <div>
+        <input type="checkbox" name="chek-1" id="chek-1">
+        <label for="chek-1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      </div>
+      <div>
+        <input type="checkbox" name="chek-2" id="agreement" required>
+        <label for="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </div>
+      <div>
+        <button class="button" id="submit-btn" type="submit" disabled>Enviar</button>
+        <button class="button" type="submit">Apagar</button>
+      </div>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
