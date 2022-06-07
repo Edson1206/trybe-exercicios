@@ -1,12 +1,3 @@
-window.onload = function () {
-  const clearBtn = document.getElementById('clean');
-  clearBtn.addEventListener('click', clearFields);
-  const inputButton = document.querySelector('button');
-  inputButton.addEventListener('click', submit);
-  const agreement = document.querySelector('#agreement');
-  agreement.addEventListener('change', enableSubmit);
-}
-
 function handleSubmit(event) {
   event.preventDefault();
   const validation = textInputValidation();
@@ -17,8 +8,17 @@ function handleSubmit(event) {
   }
 }
 
+window.onload = function () {
+  const clearBtn = document.querySelector('#clear-btn');
+  clearBtn.addEventListener('click', clearFields);
+  const inputButton = document.querySelector('button');
+  inputButton.addEventListener('click', handleSubmit);
+  const agreement = document.querySelector('#agreement');
+  agreement.addEventListener('change', enableSubmit);
+}
+
 function clearFields() {
-  const formElements = document.querySelector('input');
+  const formElements = document.getElementsByTagName('input');
   const textArea = document.querySelector('textarea');
   for (let index = 0; index < formElements.length; index += 1) {
     const userInput = formElements[index];
