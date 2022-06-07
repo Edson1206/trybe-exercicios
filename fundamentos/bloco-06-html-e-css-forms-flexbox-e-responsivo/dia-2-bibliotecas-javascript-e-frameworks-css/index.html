@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+<h1>Formulário da TrybeTrip</h1>
+  <div id="formulary">  
+    <form action="" method="get" disabled>
+      <div class="mb-3">
+        <label for="name">Nome Completo</label>
+        <input type="text" name="name" id="name" minlength="10" maxlength="40" 
+       placeholder="Digite seu nome completo" required>
+      </div>
+      <div class="mb-3">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="Digite seu email" required>
+      </div>
+      <div class="mb-3">
+        <input type="radio" name="destiny" id="destiny-1">
+        <label for="destiny-1">Cidade</label>
+        <input type="radio" name="destiny" id="destiny-2">
+        <label for="destiny-2">Campo</label>
+        <input type="radio" name="destiny" id="destiny-3">
+        <label for="destiny-3">Praia</label>
+        <input type="radio" name="destiny" id="destiny-4">
+        <label for="destiny-4">Montanhas</label>
+      </div>
+      <div class="mb-3">
+        <label for="question">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea name="textQuestion" id="question" cols="50" rows="10" maxlength="500" placeholder="Digite sua resposta aqui"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="data">Melhor data para sua viagem:</label>
+        <input type="date" name="data" id="data">
+      </div>
+      <div class="mb-3">
+        <input type="checkbox" name="promo" id="promo">
+        <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      </div>
+      <div class="mb-3">
+        <input type="checkbox" name="agreement" id="agreement" required>
+        <label for="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </div>
+      
+    </form>
+    <div class="mb-3 buttons">
+      <div>
+        <button class="btn btn-primary btn-lg" id="submit-btn" type="submit" disabled>Enviar</button>
+      </div>
+      <div>
+        <button class="btn btn-danger" id="clear-btn" type="button">Apagar</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
